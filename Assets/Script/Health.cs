@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Healh : MonoBehaviour
+public class Health : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
-    private float currentHealth;
+    public float currentHealth { get; private set; }
 
     // Start is called before the first frame update
     private void Awake ()
@@ -26,5 +26,12 @@ public class Healh : MonoBehaviour
         {
             //player dead 
         }
+
+    }
+
+    private void Update ()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+            TakeDamage(1);
     }
 }
