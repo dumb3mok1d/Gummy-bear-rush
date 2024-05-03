@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 14e77637e2d38644b8252eab9a1dddff
+guid: 11b27d9e8d3cc1049b244209308503a6
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,9 +119,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: spiked lollypop
+  - name: Door
     originalName: 
-    pivot: {x: 0.89285713, y: -0.1}
+    pivot: {x: 0.5357143, y: -0.6486486}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -129,8 +129,8 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 28
-      height: 70
-    spriteID: 29d11256b92e3e94c810f92534e69dc3
+      height: 37
+    spriteID: 38fed517edde484428c4bd9c059ee32c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,20 +142,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1594343887
-    name: spiked lollypop
+    guid: -1909541106
+    name: Door
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: spiked lollypop
+    - name: Door
       frameIndex: 0
       cellRect:
-        x: 25
-        y: 7
+        x: 35
+        y: 24
         width: 28
-        height: 70
-      spriteId: 29d11256b92e3e94c810f92534e69dc3
+        height: 37
+      spriteId: 38fed517edde484428c4bd9c059ee32c
     linkedCells: []
     parentIndex: -1
   platformSettings: []
