@@ -6,11 +6,14 @@ public class Health : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; }
+    private Animator anim;
+    private bool dead;
 
     // Start is called before the first frame update
     private void Awake ()
     {
         currentHealth = startingHealth;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,18 +23,21 @@ public class Health : MonoBehaviour
 
         if (currentHealth > 0)
         {
-            //player hurt
+            anim.SetTrigger("hurt");
+            //iframes???
         }
         else
         {
-            //player dead 
+            if (!dead)
+            {
+                anim.SetTrigger("died");
+                GetComponent<PlayerMovement>().enabled = false;
+                dead = true;
+            }
+            
         }
 
     }
 
-    private void Update ()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-            TakeDamage(1);
-    }
+   
 }
