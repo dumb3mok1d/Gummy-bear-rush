@@ -121,15 +121,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: spiked lollypop
     originalName: 
-    pivot: {x: 0.89285713, y: -0.1}
+    pivot: {x: 0.9166666, y: -1.1515151}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 28
-      height: 70
+      width: 24
+      height: 33
     spriteID: 29d11256b92e3e94c810f92534e69dc3
     spriteBone: []
     spriteOutline: []
@@ -151,10 +151,10 @@ ScriptedImporter:
     - name: spiked lollypop
       frameIndex: 0
       cellRect:
-        x: 25
-        y: 7
-        width: 28
-        height: 70
+        x: 28
+        y: 38
+        width: 24
+        height: 33
       spriteId: 29d11256b92e3e94c810f92534e69dc3
     linkedCells: []
     parentIndex: -1

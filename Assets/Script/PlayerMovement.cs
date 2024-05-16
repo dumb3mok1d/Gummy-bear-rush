@@ -9,12 +9,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speed;
     private Rigidbody2D body;
     private Animator anim;
+    private UIManager uiManager;
 
     private void Awake()
     {
         // grab references for rigidbody and animator 
         body= GetComponent<Rigidbody2D>();
         anim= GetComponent<Animator>();
+        uiManager = FindObjectOfType<UIManager>();
     }
 
     private void Update()
@@ -32,5 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
         //Set animator parameters
         anim.SetBool("walking", horizontalInput != 0);
+
+      
     }
 }  

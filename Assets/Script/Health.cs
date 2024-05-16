@@ -1,3 +1,5 @@
+using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,6 +27,7 @@ public class Health : MonoBehaviour
         {
             anim.SetTrigger("hurt");
             //iframes???
+           
         }
         else
         {
@@ -37,7 +40,22 @@ public class Health : MonoBehaviour
             
         }
 
+        
+
+    }
+              
+   public void Respawn()
+    {
+        dead = false;
+        AddHealth(startingHealth);
+        anim.ResetTrigger("died");
+        anim.Play("Idle");
+
+        
     }
 
-   
+    private void AddHealth(float startingHealth)
+    {
+        throw new NotImplementedException();
+    }
 }
